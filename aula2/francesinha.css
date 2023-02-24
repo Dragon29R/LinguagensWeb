@@ -1,0 +1,89 @@
+
+  @font-face {
+      font-family: Imperial Script;
+      src: url(fonts/ImperialScript-Regular.ttf);
+  }
+  @font-face {
+      font-family: Ruda;
+      src: url(fonts/Ruda-VariableFont_wght.ttf);
+  }
+  @font-face {
+      font-family:CrimsonPro;
+      src: url(fonts/CrimsonPro-VariableFont_wght.ttf);
+  }
+  h1{
+      font-family:Imperial Script;
+      text-align: center;
+      font-size: 150px;
+      margin-bottom:0px;    
+  }
+  #deslist{
+      text-align: left;
+      border-radius:10px;
+      border-style: dashed;
+      border-color: red;
+      border-right: 15px solid red;
+      background-color: pink;
+      
+  }
+  .subtitles{
+      margin-left: 10px;
+      margin-right:10px;
+      font-family: Ruda;
+      text-align: right;
+      border-bottom: 2px solid black;
+      font-size:35px;
+  }
+
+  dl{
+      margin: 40px;
+  }
+  dt{
+      margin-top: 20px;
+      margin-left: 20px;
+      font-variant-caps:small-caps;
+
+  }
+  dd{
+      margin-bottom: 20px;
+  }
+  p{
+      margin-left: 10px;
+      margin-right:10px;
+      font-family: CrimsonPro;
+      font-size:25px;
+  }
+  #imgfran{
+      
+      width:90%;
+      
+  }
+
+  .smoll{
+    font-size:22px;
+    margin-left: 10px;
+    margin-right:10px;
+  }
+  main{
+    
+    width:700px;
+    background-color: rgb(247, 237, 226);
+    margin-left:auto;
+    margin-right: auto;
+    padding-top:1em;
+    padding-bottom: 1em;
+  }
+  .ingredient{
+    color:rgb(132, 165, 157);
+    
+  }
+
+  li{
+    font-size:17px;
+    font-family: sans-serif;
+    margin-bottom:10px;
+    margin-left: 10px;
+    margin-right:10px;
+  }
+
+  
