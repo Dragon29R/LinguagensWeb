@@ -133,13 +133,13 @@ footer{
     background-color: red;
     color: white;
     font-size: 1.1em;
+    margin-bottom: 1em;
 }
 article footer{
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
 footer p{
-    background-color: black;
     color: white;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -164,4 +164,7 @@ footer .tags a{
 .comments{
     margin-left: 0.5em;
     text-decoration: underline;
+}
+body > footer{
+    background-color: #2A2F33;
 }

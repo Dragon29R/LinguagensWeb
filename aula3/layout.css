@@ -1,31 +1,47 @@
-body > header:first-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    flex-wrap: wrap;
+body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+body > header{
+    grid-row-start: 1;
+    grid-row-end:1 ;
+    grid-column-start: 1;
+    grid-column-end: 10;
 }
-  
-body > header > h1 {
-    margin: 0;
-    order: 1;
+body > #menu{
+    grid-row-start: 2;
+    grid-row-end:2 ;
+    grid-column-start: 1;
+    grid-column-end: 8;
 }
-  
-body > header > h2 {
-    margin: 0;
-    order: 2;
+body > #related{
+    grid-column-start: 9;
+    grid-column-end:10;
+    grid-row-start: 2;
+    grid-row-end: 9;
 }
-  
-#signup {
-    margin-left: auto;
-    order: 3;
+body > #news{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+body > footer{
+    grid-row-start: 10;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 10;
 }
 
-#menu ul {
+.tags{
+    margin-left:38em;
+}
+
+ul {
     display: flex;
     list-style: none;
 }
-  
-#menu li {
-    flex:1;
+li{
+    flex:1;    
 }
-
