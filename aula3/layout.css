@@ -34,14 +34,33 @@ body > footer{
     grid-column-end: 10;
 }
 
-.tags{
-    margin-left:38em;
+#news footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
 ul {
     display: flex;
     list-style: none;
 }
 li{
     flex:1;    
+}
+.author {
+    order: 1;
+}
+  
+.tags {
+    order: 2;
+    margin-left: auto;
+}
+  
+.date {
+    order: 3;
+    margin-left: 10px;
+}
+  
+.comments {
+    order: 4;
+    margin-left: 10px;
 }
