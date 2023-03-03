@@ -12,11 +12,11 @@ a{
 header > h1>a,h2>a,div>a{
     color:white;
 } 
-
 body > header{
     background-color: rgb(5,109,213);
     display:flex;
     flex-direction: column;
+    padding-bottom: 1em;
 }
 body > header > h1{
     font-size: 3em;
@@ -29,16 +29,139 @@ body > header > h2{
     margin-top: 0%;
     font-size:1.5em;
     font-family: Poppins;
-    font-weight: normal;
+    font-weight:1;
     margin-left:1%;
 }
-
 #signup{
-    margin-left: 1%;
-    flex:auto;
+    padding-top: 0%;
 }
-#signup > a{
-    font-size: 1.5em;
+#signup  a{
+    font-size: 0.8em;
     font-weight: normal;
     font-family: Poppins;
+    display: inline-block;
+    padding: 1em;
+    border-right: 0.09em solid #ccc;
+}
+#signup a:last-child {
+    border-right: none; 
+  }
+label{
+    display: none;
+}
+#hamburger{
+    display: none;
+}
+ul{
+    padding-left: 0;
+    margin-top: 0;
+}
+li{
+    text-align: center;
+    list-style: none;
+    font-size: 1.1em;
+    padding-bottom:0.8em;
+    padding-top: 0.8em;
+}
+li:nth-child(1){
+    border-top:0.3em solid red;
+}
+li:nth-child(2){
+    border-top:0.3em solid green;
+}
+li:nth-child(3){
+    border-top:0.3em solid blue;
+}
+li:nth-child(4){
+    border-top:0.3em solid orange;
+}
+li:nth-child(5){
+    border-top:0.3em solid lightskyblue ;
+}
+li:nth-child(6){
+    border-top:0.3em solid pink;
+}
+li a{
+    color:black;
+    font-family:Poppins;
+}
+#related{
+    background-color: #2A2F33;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#related article  h1 a{
+    color:White;
+    font-family: Poppins;
+    margin-left: 1em;
+}
+#related article p{
+    color:white;
+    font-weight: lighter;
+    margin-left: 1em;
+}
+#news > article > header{
+    margin-left:1em;
+    position: absolute;
+    width: 20%;
+    font-size: 1.7em;
+    font-family: Poppins;
+    
+}
+#news > article > header > h1 > a{
+    text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
+#news article img{
+    width:100%;
+}
+#news article{
+    margin-top: 1em;
+}
+#news article p{
+    margin-left: 1em;
+    font-size: 1.1em;
+    font-weight:bold;
+}
+#news article p:first-of-type::first-letter{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+p{
+    font-family: Lota;
+}
+footer{
+    background-color: red;
+    color: white;
+    font-size: 1.1em;
+}
+article footer{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+footer p{
+    background-color: black;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.7em;
+}
+footer .tags a{
+    text-decoration: underline;
+    color: white;
+}
+.comments{
+    color:white;
+}
+.author , .date{
+    margin-left: 0.7em;
+}
+.author::before{
+    content:"By ";
+}
+.comments::after{
+    content:" comments"
+}
+.comments{
+    margin-left: 0.5em;
+    text-decoration: underline;
 }
