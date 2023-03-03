@@ -159,7 +159,7 @@ footer .tags a{
     content:"By ";
 }
 .comments::after{
-    content:" comments"
+    content:" comments";
 }
 .comments{
     margin-left: 0.5em;

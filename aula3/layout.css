@@ -1,0 +1,31 @@
+body > header:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-wrap: wrap;
+}
+  
+body > header > h1 {
+    margin: 0;
+    order: 1;
+}
+  
+body > header > h2 {
+    margin: 0;
+    order: 2;
+}
+  
+#signup {
+    margin-left: auto;
+    order: 3;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+  
+#menu li {
+    flex:1;
+}
+
