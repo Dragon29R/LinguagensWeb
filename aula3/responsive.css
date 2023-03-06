@@ -1,0 +1,75 @@
+@media screen and (max-width: 60em) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+      }
+    body > header{
+        grid-row: 1;
+        grid-column: 1 / 10;
+    }
+    body > #menu{
+        grid-row:2;
+        grid-column: 1 / 10;
+    }
+    body > #news{
+        grid-row: 3/9;
+        grid-column: 1/10;
+    }
+    body > footer{
+        grid-row: 10;
+        grid-column: 1/10;
+    }
+    body > #related{
+        display: none;
+    }
+    #news > article > header{font-size: 1.5em;}
+}
+@media screen and (max-width: 40em) {
+    #menu {
+        background-color: darkslategray;
+        transition: all 0.5s ease;
+    }
+    #menu ul {
+        display: none;
+        transition: all 0.5s ease;
+    }
+    #menu ul li {
+        display: block;
+        transition: all 0.5s ease;
+    }
+
+    #hamburger:checked ~ ul {
+        display: block;
+        transition: all 0.5s ease;
+    }
+    .hamburger {
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+    .hamburger:before {
+        content: "\2630";
+        transition: all 0.5s ease;
+    }
+    .hamburger:after {
+        content: "";
+        display: block;
+        position: absolute;
+        transition: all 0.5s ease;
+    }
+    #hamburger:checked + .hamburger:before {
+        content: "\2715";
+        transition: all 0.5s ease;
+    }
+    nav#menu ul li:hover {
+        background-color: black;
+        color: white;
+        transition: all 0.5s ease;
+    }
+    #menu li:hover a {
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+    #news > article > header{font-size: 1.2em;}
+  }
