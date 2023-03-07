@@ -90,10 +90,13 @@ li a{
     padding-top: 1em;
     padding-bottom: 1em;
 }
+#related article  h1{
+    margin-left: 1em;
+}
 #related article  h1 a{
     color:White;
     font-family: Poppins;
-    margin-left: 1em;
+    
 }
 #related article p{
     color:white;
@@ -117,12 +120,12 @@ li a{
 #news article{
     margin-top: 1em;
 }
-#news article p{
+#news > article > p{
     margin-left: 1em;
     font-size: 1.1em;
     font-weight:bold;
 }
-#news article p:first-of-type::first-letter{
+#news > article > p:first-of-type::first-letter{
     font-size: 1.5em;
     font-weight: bolder;
 }
