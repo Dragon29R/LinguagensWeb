@@ -28,48 +28,72 @@
 @media screen and (max-width: 40em) {
     #menu {
         background-color: darkslategray;
-        transition: all 0.5s ease;
     }
     #menu ul {
-        display: none;
-        transition: all 0.5s ease;
-    }
-    #menu ul li {
-        display: block;
-        transition: all 0.5s ease;
-    }
+        opacity: 0;
+        height: 0em;
+        transition: height 0.4s ease-in;
 
+    }
     #hamburger:checked ~ ul {
+        opacity: 1;
+        height:19.45em;
         display: block;
-        transition: all 0.5s ease;
+        transition: height 0.4s ease-in;
+    }
+    #hamburger:checked ~ ul li:nth-child(1) {
+        border-top:none;
+        border-left:0.3em solid red;
+    }
+    #hamburger:checked ~ ul li:nth-child(2) {
+        border-top:none;
+        border-left:0.3em solid green;
+    }
+    #hamburger:checked ~ ul li:nth-child(3) {
+        border-top:none;
+        border-left:0.3em solid blue;
+    }
+    #hamburger:checked ~ ul li:nth-child(4) {
+        border-top:none;
+        border-left:0.3em solid orange;
+    }
+    #hamburger:checked ~ ul li:nth-child(5) {
+        border-top:none;
+        border-left:0.3em solid lightskyblue;
+    }
+    #hamburger:checked ~ ul li:nth-child(6) {
+        border-top:none;
+        border-left:0.3em solid pink;
+    }
+    li{
+        text-align: left;
+        padding-left: 1em;
     }
     .hamburger {
-        display: block;
-        position: relative;
+        display:block;
         cursor: pointer;
+        
+    }
+    #hamburger{
+        height: 100%;
+        transition: height 2s; 
     }
     .hamburger:before {
         content: "\2630";
-        transition: all 0.5s ease;
-    }
-    .hamburger:after {
-        content: "";
-        display: block;
-        position: absolute;
-        transition: all 0.5s ease;
     }
     #hamburger:checked + .hamburger:before {
         content: "\2715";
-        transition: all 0.5s ease;
     }
+    
+    
     nav#menu ul li:hover {
         background-color: black;
         color: white;
-        transition: all 0.5s ease;
+        transition: all 1s ease;
     }
     #menu li:hover a {
         color: #fff;
-        transition: all 0.5s ease;
+        transition: all 1s ease;
     }
     #news > article > header{font-size: 1.2em;}
   }
