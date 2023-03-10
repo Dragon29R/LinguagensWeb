@@ -106,13 +106,12 @@ li a{
 #news > article > header{
     margin-left:1em;
     position: absolute;
-    width: 20%;
-    font-size: 1.7em;
-    font-family: Poppins;
-    
+    width: 20%; 
 }
 #news > article > header > h1 > a{
     text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+    font-size: 1.7em;
+    font-family: Poppins;
 }
 #news article img{
     width:100%;

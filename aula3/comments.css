@@ -31,6 +31,8 @@
     content: "\201C";
     font-size: 5em;
     color:gray;
+    vertical-align: middle;
+    
 }
 form{
     padding: 1em;
