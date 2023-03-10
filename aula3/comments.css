@@ -44,6 +44,7 @@ form{
 }
 form >label{
     display:block;
+    
 }
 form > h2{
     margin-top: 0em;
@@ -59,13 +60,31 @@ form > label:first-of-type{
 form > label:nth-child(3){
     grid-row:2;
     grid-column: 3/10;
+    
 }
 form > label:nth-child(4){
     margin: 1em;
     grid-row:3;
     grid-column: 1/10;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
 }
 form > button{
     grid-row:4;
     grid-column: 8/10;
+    background-color: black;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 1em;
+}
+
+input[type="text"], input[type="email"] {
+    width: 80%;
+    box-sizing :border-box;
+    border-color:black ;
+}
+textarea{
+    width: 90%;
 }
